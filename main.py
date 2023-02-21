@@ -10,5 +10,5 @@ print("Length: ",vd.length)
 print("Decription: ",vd.description)
 print("Rating: ",vd.rating)
 
-video = vd.streams.first()#choose format
+video = vd.streams.get_highest_resolution()#choose format
 video.download("Choose folder path")
